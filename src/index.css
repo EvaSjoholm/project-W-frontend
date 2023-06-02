@@ -1,4 +1,5 @@
 body {
+  background-color: var(--primary-color-1);
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
@@ -10,4 +11,116 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+html {
+  font-size: var(--font-size);
+  font-family: var(--font-family);
+  color: var(--neutral-dark);
+}
+
+:root {
+  --primary-color-1: #F5F5F5;
+  --primary-color-2: #a7b7abfc;
+  --primary-color-3:  #AEC2B6;
+  --secondary-color-1: #BBD6B8;
+  --secondary-color-2: #BBD6B8;
+  --secondart-color-3: #dc7958;
+  --neutral-light: #FFFFFF;
+  --neutral-medium: #525252;
+  --neutral-dark: #000000;
+  --font-family: 'Inter', sans-serif;
+  --font-size: 16px;
+
+
+  --side-margins-mobile: 10px; 
+  --side-margins-tablet: 30px;
+  --side-margins-desktop: 50px;
+}
+
+h1 {
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 10px;
+  margin: 0;
+}
+
+h2 {
+  margin: 0;
+}
+
+h3 {
+  margin: 0;
+}
+
+p {
+  margin: 0;
+  font-size: 22px;
+}
+
+.header {
+  background-color: var(--primary-color-1);
+  max-width: 800px;
+  min-height: 100px;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid black;
+}
+
+.main {
+  background-color: var(--primary-color-2);
+  max-width: 800px;
+  min-height: 200px;
+  margin: auto;
+  padding: 20px;
+}
+
+.content-wrapper {
+  display: flex;
+  flex-direction: column;
+  margin: var(--side-margins-mobile);
+}
+
+.content-container {
+  background-color: var(--secondary-color-1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto 30px auto;
+}
+
+.content-container-text {
+  background-color: var(--secondary-color-1);
+  margin-top: 10px;
+}
+
+.content-img {
+  max-height: 50px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 50%;
+}
+
+.navbar {
+  top: 0;
+  left: 0;
+  z-index: 1;
+  border: 1px solid black;
+  text-align: -webkit-center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 15px;
+}
+.btn {
+display: inline-block;
+background: #000;
+color: #fff;
+border: none;
+padding: 10px 20px;
+margin: 5px;
+border-radius: 5px;
+cursor: pointer;
+text-decoration: none;
+font-size: 15px
 }

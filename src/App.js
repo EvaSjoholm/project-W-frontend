@@ -1,9 +1,14 @@
 import React from 'react'
+import { NavBar } from 'NavBar'
+import { Header } from 'components/Header'
+import { StartPage } from 'components/StartPage'
 
 export const App = () => {
   return (
-    <div>
-      Find me in src/app.js!
-    </div>
+    <>
+      <NavBar />
+      <Header />
+      <StartPage title="Wörkout Quiz" />
+    </>
   )
 }
