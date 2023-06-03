@@ -8,7 +8,7 @@ export const StartPage = ({ title }) => {
   return (
     <div className="main">
       <h1>{title}</h1>
-      <Button color="black" text="QUIZ" onClick={onClick} />
+      <Button color="black" text="SIGN UP" onClick={onClick} />
     </div>
   )
 }
