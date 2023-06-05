@@ -7,6 +7,9 @@ export const Quiz = () => {
   const [quizzes, setQuizzes] = useState([])
   const [currentQuestion, setCurrentQuestion] = useState(0)
   const [workoutType, setWorkoutType] = useState('')
+  const [workoutStruggle, setWorkoutStruggle] = useState('')
+  const [workoutLevel, setWorkoutLevel] = useState('')
+  const [contact, setContact] = useState('')
 
   const nextQuestion = (questionsLength) => () => {
     console.log('next', currentQuestion)
@@ -33,8 +36,16 @@ export const Quiz = () => {
   }, []);
 
   const handleAnswerChange = (event) => {
-    setWorkoutType(event.target.value)
-    console.log(workoutType)
+    if (currentQuestion <= 1) {
+      setWorkoutType(event.target.value)
+    } else if (currentQuestion === 0) {
+      setWorkoutStruggle(event.target.value)
+    } else if (currentQuestion === 1) {
+      setWorkoutLevel(event.target.value)
+    } else if (currentQuestion === 2) {
+      setContact(event.target.value)
+    }
+    console.log(workoutType, workoutStruggle, workoutLevel, contact)
   }
 
   return (
