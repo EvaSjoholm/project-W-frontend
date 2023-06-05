@@ -6,6 +6,7 @@ import { Question } from './Question';
 export const Quiz = () => {
   const [quizzes, setQuizzes] = useState([])
   const [currentQuestion, setCurrentQuestion] = useState(0)
+
   const [workoutType, setWorkoutType] = useState('')
   const [workoutStruggle, setWorkoutStruggle] = useState('')
   const [workoutLevel, setWorkoutLevel] = useState('')

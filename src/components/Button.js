@@ -2,6 +2,7 @@ import React from 'react'
 
 export const Button = ({ color, text, onClick }) => {
   return (
+
     <button
       type="button"
       onClick={onClick}
