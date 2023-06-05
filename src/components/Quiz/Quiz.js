@@ -6,6 +6,7 @@ import { Question } from './Question';
 export const Quiz = () => {
   const [quizzes, setQuizzes] = useState([])
   const [currentQuestion, setCurrentQuestion] = useState(0)
+  const [workoutType, setWorkoutType] = useState('')
 
   const nextQuestion = (questionsLength) => () => {
     console.log('next', currentQuestion)
@@ -31,6 +32,11 @@ export const Quiz = () => {
       });
   }, []);
 
+  const handleAnswerChange = (event) => {
+    setWorkoutType(event.target.value)
+    console.log(workoutType)
+  }
+
   return (
     <div className="content-container">
       {quizzes.map((quiz) => {
@@ -41,7 +47,8 @@ export const Quiz = () => {
             <Question
               id={question1._id}
               title={question1.questionText}
-              options={question1.options} />
+              options={question1.options}
+              handleAnswerChange={handleAnswerChange} />
             <Button color="Pink" text="NEXT" onClick={nextQuestion(quiz.questions.length)} />
             <Button color="Pink" text="PREV" onClick={prevQuestion} />
           </div>
