@@ -1,6 +1,6 @@
 import React from 'react'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
-import { NavBar } from 'NavBar'
+import { NavBar } from 'components/Navbar/NavBar'
 import { Header } from 'components/Header'
 import { StartPage } from 'components/StartPage'
 import { Quiz } from 'components/Quiz/Quiz'
