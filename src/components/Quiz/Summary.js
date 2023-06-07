@@ -1,14 +1,15 @@
 import React from 'react';
 
-export const Summary = ({ question, chosenOptions }) => {
+export const Summary = ({ answers }) => {
   return (
-    <div className="content-wrapper" key={chosenOptions}>
-      {chosenOptions.map((option) => (
+    <div className="content-wrapper">
+      {answers.map((answer) => (
         // eslint-disable-next-line no-underscore-dangle
-        <>
-          <p>Question: {question}</p>
-          <p>Answer: {option}</p>
-        </>
+        <div key={answer.question}>
+          <p>Question: {answer.question}</p>
+          <p>Answer: {answer.option}</p>
+        </div>
+
       ))}
     </div>
 

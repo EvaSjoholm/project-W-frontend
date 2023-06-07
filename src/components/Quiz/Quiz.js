@@ -7,11 +7,7 @@ import { Summary } from './Summary';
 export const Quiz = () => {
   const [quizzes, setQuizzes] = useState([])
   const [currentQuestion, setCurrentQuestion] = useState(0)
-
-  const [workoutType, setWorkoutType] = useState('')
-  const [workoutStruggle, setWorkoutStruggle] = useState('')
-  const [workoutLevel, setWorkoutLevel] = useState('')
-  const [contact, setContact] = useState('')
+  const [answers, setAnswers] = useState([])
 
   const [isLastQuestion, setIsLastQuestion] = useState(false);
   const [submitted, setSubmitted] = useState(false)
@@ -22,12 +18,6 @@ export const Quiz = () => {
       setCurrentQuestion(currentQuestion + 1)
     }
   }
-  // const prevQuestion = () => {
-  //   console.log('prev')
-  //   if (currentQuestion > 0) {
-  //     setCurrentQuestion(currentQuestion - 1)
-  //   }
-  // }
 
   useEffect(() => {
     fetch('https://finale-project-backend.onrender.com/quizzes')
@@ -51,17 +41,12 @@ export const Quiz = () => {
   const handleAnswerChange = (event) => {
     const selectedOption = event.target.value
     console.log('Selected Option', selectedOption)
-
-    if (currentQuestion <= 0) {
-      setWorkoutType(event.target.value)
-    } else if (currentQuestion === 1) {
-      setWorkoutStruggle(event.target.value)
-    } else if (currentQuestion === 2) {
-      setWorkoutLevel(event.target.value)
-    } else if (currentQuestion === 3) {
-      setContact(event.target.value)
+    answers[currentQuestion] = {
+      question: quizzes[0].questions[currentQuestion].questionText,
+      option: selectedOption
     }
-    console.log(workoutType, workoutStruggle, workoutLevel, contact)
+    setAnswers(answers)
+    console.log(answers)
   }
 
   const submitQuiz = () => {
@@ -84,14 +69,10 @@ export const Quiz = () => {
               color="Pink"
               text={isLastQuestion ? 'SUBMIT' : 'NEXT'}
               onClick={isLastQuestion ? submitQuiz : nextQuestion(quiz.questions.length)} />
-            {/* <Button color="Pink" text="NEXT" onClick={nextQuestion(quiz.questions.length)} />
-            <Button color="Pink" text="PREV" onClick={prevQuestion} /> */}
             {submitted && (
               <Summary
-                questions={quiz.option}
-                chosenOptions={[workoutType, workoutStruggle, workoutLevel, contact]} />
+                answers={answers} />
             )}
-            {/* <Button color="Red" text="SUBMIT" onClick={submitQuiz} /> */}
           </div>
         )
       })}
