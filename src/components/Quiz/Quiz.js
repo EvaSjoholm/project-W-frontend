@@ -24,6 +24,7 @@ export const Quiz = () => {
       setCurrentQuestion(currentQuestion - 1)
     }
   }
+
   useEffect(() => {
     fetch('https://finale-project-backend.onrender.com/quizzes')
       .then((res) => res.json())
@@ -37,13 +38,16 @@ export const Quiz = () => {
   }, []);
 
   const handleAnswerChange = (event) => {
-    if (currentQuestion <= 1) {
+    const selectedOption = event.target.value
+    console.log('Selected Option', selectedOption)
+
+    if (currentQuestion <= 0) {
       setWorkoutType(event.target.value)
-    } else if (currentQuestion === 0) {
-      setWorkoutStruggle(event.target.value)
     } else if (currentQuestion === 1) {
-      setWorkoutLevel(event.target.value)
+      setWorkoutStruggle(event.target.value)
     } else if (currentQuestion === 2) {
+      setWorkoutLevel(event.target.value)
+    } else if (currentQuestion === 3) {
       setContact(event.target.value)
     }
     console.log(workoutType, workoutStruggle, workoutLevel, contact)

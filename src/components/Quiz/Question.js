@@ -1,6 +1,6 @@
 import React from 'react'
 
-export const Question = ({ id, title, options, handleAnswerChange }) => {
+export const Question = ({ id, title, options, handleAnswerChange, index }) => {
   return (
     <div className="content-wrapper">
       <h3>{title}</h3>
@@ -11,6 +11,7 @@ export const Question = ({ id, title, options, handleAnswerChange }) => {
             id={option}
             name={id}
             value={option}
+            checked={index}
             onChange={handleAnswerChange} />
           <label htmlFor={option}>{option}</label>
         </div>
