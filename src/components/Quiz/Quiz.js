@@ -87,7 +87,9 @@ export const Quiz = () => {
             {/* <Button color="Pink" text="NEXT" onClick={nextQuestion(quiz.questions.length)} />
             <Button color="Pink" text="PREV" onClick={prevQuestion} /> */}
             {submitted && (
-              <Summary chosenOptions={[workoutType, workoutStruggle, workoutLevel, contact]} />
+              <Summary
+                questions={quiz.option}
+                chosenOptions={[workoutType, workoutStruggle, workoutLevel, contact]} />
             )}
             {/* <Button color="Red" text="SUBMIT" onClick={submitQuiz} /> */}
           </div>
