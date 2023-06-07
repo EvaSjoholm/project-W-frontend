@@ -13,6 +13,7 @@ export const Quiz = () => {
   const [workoutLevel, setWorkoutLevel] = useState('')
   const [contact, setContact] = useState('')
 
+  const [isLastQuestion, setIsLastQuestion] = useState(false);
   const [submitted, setSubmitted] = useState(false)
 
   const nextQuestion = (questionsLength) => () => {
@@ -21,12 +22,12 @@ export const Quiz = () => {
       setCurrentQuestion(currentQuestion + 1)
     }
   }
-  const prevQuestion = () => {
-    console.log('prev')
-    if (currentQuestion > 0) {
-      setCurrentQuestion(currentQuestion - 1)
-    }
-  }
+  // const prevQuestion = () => {
+  //   console.log('prev')
+  //   if (currentQuestion > 0) {
+  //     setCurrentQuestion(currentQuestion - 1)
+  //   }
+  // }
 
   useEffect(() => {
     fetch('https://finale-project-backend.onrender.com/quizzes')
@@ -39,6 +40,13 @@ export const Quiz = () => {
         console.log(error)
       });
   }, []);
+
+  useEffect(() => {
+    if (quizzes.length > 0) {
+      const currentQuiz = quizzes[0];
+      setIsLastQuestion(currentQuestion === currentQuiz.questions.length - 1);
+    }
+  }, [currentQuestion, quizzes])
 
   const handleAnswerChange = (event) => {
     const selectedOption = event.target.value
@@ -72,12 +80,16 @@ export const Quiz = () => {
               title={question1.questionText}
               options={question1.options}
               handleAnswerChange={handleAnswerChange} />
-            <Button color="Pink" text="NEXT" onClick={nextQuestion(quiz.questions.length)} />
-            <Button color="Pink" text="PREV" onClick={prevQuestion} />
+            <Button
+              color="Pink"
+              text={isLastQuestion ? 'SUBMIT' : 'NEXT'}
+              onClick={isLastQuestion ? submitQuiz : nextQuestion(quiz.questions.length)} />
+            {/* <Button color="Pink" text="NEXT" onClick={nextQuestion(quiz.questions.length)} />
+            <Button color="Pink" text="PREV" onClick={prevQuestion} /> */}
             {submitted && (
               <Summary chosenOptions={[workoutType, workoutStruggle, workoutLevel, contact]} />
             )}
-            <Button color="Red" text="SUBMIT" onClick={submitQuiz} />
+            {/* <Button color="Red" text="SUBMIT" onClick={submitQuiz} /> */}
           </div>
         )
       })}
