@@ -2,6 +2,7 @@
 import React, { useState, useEffect } from 'react'
 import { Button } from 'components/Button';
 import { Question } from './Question';
+import { Summary } from './Summary';
 
 export const Quiz = () => {
   const [quizzes, setQuizzes] = useState([])
@@ -11,6 +12,8 @@ export const Quiz = () => {
   const [workoutStruggle, setWorkoutStruggle] = useState('')
   const [workoutLevel, setWorkoutLevel] = useState('')
   const [contact, setContact] = useState('')
+
+  const [submitted, setSubmitted] = useState(false)
 
   const nextQuestion = (questionsLength) => () => {
     console.log('next', currentQuestion)
@@ -53,6 +56,10 @@ export const Quiz = () => {
     console.log(workoutType, workoutStruggle, workoutLevel, contact)
   }
 
+  const submitQuiz = () => {
+    setSubmitted(true);
+  };
+
   return (
     <div className="content-container">
       {quizzes.map((quiz) => {
@@ -67,6 +74,10 @@ export const Quiz = () => {
               handleAnswerChange={handleAnswerChange} />
             <Button color="Pink" text="NEXT" onClick={nextQuestion(quiz.questions.length)} />
             <Button color="Pink" text="PREV" onClick={prevQuestion} />
+            {submitted && (
+              <Summary chosenOptions={[workoutType, workoutStruggle, workoutLevel, contact]} />
+            )}
+            <Button color="Red" text="SUBMIT" onClick={submitQuiz} />
           </div>
         )
       })}
