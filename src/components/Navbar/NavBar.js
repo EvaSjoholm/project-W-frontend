@@ -10,10 +10,10 @@ export const NavBar = () => {
       </Link>
       <ul>
         <li className="quiz">
-          <Link to="/Quiz">Wörkout quiz</Link>
+          <Link to="/Quiz">TAKE QUIZ</Link>
         </li>
         <li>
-          <Link to="/contact">Contact</Link>
+          <Link to="/contact">CONTACT</Link>
         </li>
       </ul>
     </nav>
