@@ -15,8 +15,10 @@ export const StartPage = ({ title }) => {
   if (loading) {
     return <Loading />
   }
+
   return (
     <div className="main">
+
       <h1>{title}</h1>
       <Button color="black" text="Take Quiz" onClick={onClickToQuiz} />
       {loading}
