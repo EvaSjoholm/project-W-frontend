@@ -1,0 +1,80 @@
+.Footer {
+    width: 100%;
+    max-height: 300px;
+    padding: 50px;
+    background-color: #4c6659;
+    color: var(--main-light-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.Footer hr {
+    color: var(--main-light-color);
+    border: 0.25px solid var(--main-light-color);
+    opacity: 0.5;
+    width: 80%;
+}
+
+.linkfield {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.linkfield p {
+    cursor: pointer;
+}
+
+
+.iconfield {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.iconfield img {
+    scale: 0.9;
+    cursor: pointer;
+}
+
+  
+@media (min-width: 641px) {
+    .linkfield {
+        gap: 55px;
+    }
+
+    .iconfield {
+        gap: 30px;
+    }
+
+    .iconfield img {
+        scale: 1;
+    }
+    
+    .Footer hr {
+        width: 50%;
+    }
+
+  }
+
+  @media (min-width: 1025px) {
+    .linkfield {
+        gap: 65px;
+    }
+    
+    .iconfield {
+        gap: 40px;
+    }
+
+    .iconfield img {
+        scale: 1;
+    }
+
+    .Footer hr {
+        width: 500px;
+    }
+    
+  }

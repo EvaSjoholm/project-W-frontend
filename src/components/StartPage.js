@@ -3,10 +3,6 @@ import { useNavigate } from 'react-router-dom';
 import { Button } from './Button';
 import { Loading } from './Quiz/Loading';
 
-import DbIcon from '../assets/DBicon.png'
-import foodIcon from '../assets/foodicon.png'
-import groupIcon from '../assets/groupicon.png'
-
 export const StartPage = ({ title }) => {
   const [loading, setLoading] = useState(false)
   const navigate = useNavigate();
@@ -25,7 +21,7 @@ export const StartPage = ({ title }) => {
       <Button color="black" text="Take Quiz" onClick={onClickToQuiz} />
       <h1>{title}</h1>
       {loading}
-      <div className="icon-container">
+      {/* <div className="icon-container">
         <ul className="icon-list-item">
           <li className="icon-list-icon">
             <img src={DbIcon} alt="Db-icon" height="40px" width="40px" />
@@ -44,7 +40,7 @@ export const StartPage = ({ title }) => {
             <p> Here comes text</p>
           </li>
         </ul>
-      </div>
+      </div> */}
     </div>
   )
 }
