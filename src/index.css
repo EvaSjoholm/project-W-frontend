@@ -204,3 +204,18 @@ font-size: 2rem;
   width: 20px;
   
 }
+
+/*ICON LIST STARTPAGE*/
+.icon-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #c79953;
+  
+}
+
+.icon-container ul{
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
