@@ -18,8 +18,8 @@ export const StartPage = ({ title }) => {
 
   return (
     <div className="main">
-      <Button color="black" text="Take Quiz" onClick={onClickToQuiz} />
       <h1>{title}</h1>
+      <Button color="black" text="Take Quiz" onClick={onClickToQuiz} />
       {loading}
       {/* <div className="icon-container">
         <ul className="icon-list-item">
