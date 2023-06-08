@@ -210,7 +210,7 @@ font-size: 2rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  background-color: #c79953;
+  background-color: #d9be96;
   
 }
 
@@ -218,4 +218,18 @@ font-size: 2rem;
   padding: 0;
   margin: 0;
   list-style: none;
+}
+
+.icon-list-icon{
+display: flex;
+position: relative;
+justify-content: space-around;
+align-items: center;
+flex-wrap: wrap;
+flex-direction: row;
+}
+
+.icon-list-text {
+  padding: 10px;
+  display: flex;
 }

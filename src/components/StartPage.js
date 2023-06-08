@@ -22,24 +22,28 @@ export const StartPage = ({ title }) => {
 
   return (
     <div className="main">
+      <Button color="black" text="Take Quiz" onClick={onClickToQuiz} />
       <h1>{title}</h1>
       {loading}
       <div className="icon-container">
         <ul className="icon-list-item">
           <li className="icon-list-icon">
             <img src={DbIcon} alt="Db-icon" height="40px" width="40px" />
-            <p> Here comes text</p>
+            <span className="icon-text">
+              <p> Here comes text</p>
+            </span>
           </li>
+
           <li className="icon-list-icon">
             <img src={foodIcon} alt="food-icon" height="40px" width="40px" />
             <p> Here comes text</p>
           </li>
+
           <li className="icon-list-icon">
             <img src={groupIcon} alt="group-icon" height="40px" width="40px" />
             <p> Here comes text</p>
           </li>
         </ul>
-        <Button color="black" text="Take Quiz" onClick={onClickToQuiz} />
       </div>
     </div>
   )
