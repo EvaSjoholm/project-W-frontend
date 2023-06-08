@@ -59,20 +59,25 @@ export const Quiz = () => {
         const question1 = quiz.questions[currentQuestion];
         return (
           <div className="content-wrapper" key={quiz._id}>
-            <h3>{quiz.title}</h3>
-            <Question
-              id={question1._id}
-              title={question1.questionText}
-              options={question1.options}
-              handleAnswerChange={handleAnswerChange} />
-            <Button
-              color="Pink"
-              text={isLastQuestion ? 'SUBMIT' : 'NEXT'}
-              onClick={isLastQuestion ? submitQuiz : nextQuestion(quiz.questions.length)} />
-            {submitted && (
+            {!submitted ? (
+              <>
+                <h3>{quiz.title}</h3>
+                <Question
+                  id={question1._id}
+                  title={question1.questionText}
+                  options={question1.options}
+                  handleAnswerChange={handleAnswerChange} />
+                <Button
+                  color="Pink"
+                  text={isLastQuestion ? 'SUBMIT' : 'NEXT'}
+                  onClick={isLastQuestion ? submitQuiz : nextQuestion(quiz.questions.length)} />
+              </>
+            ) : (
+
               <Summary
                 answers={answers} />
             )}
+            {/* {submitted && ( */}
           </div>
         )
       })}

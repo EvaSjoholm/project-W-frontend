@@ -1,14 +1,15 @@
 import React from 'react';
 
 export const Summary = ({ answers }) => {
+  console.log(answers)
   return (
-    <div className="content-container">
+    <div className="summary-wrapper">
       {answers.map((answer) => (
         // eslint-disable-next-line no-underscore-dangle
         <div key={answer.question}>
           <div className="summary-wrapper">
-            <p className="summary-p">Question: {answer.question}</p>
-            <p className="summary-p">Answer: {answer.option}</p>
+            <h3 className="summary-h3"> {answer.question}</h3>
+            <p className="summary-p"> {answer.option}</p>
           </div>
         </div>
       ))}

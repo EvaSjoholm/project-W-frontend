@@ -88,6 +88,7 @@ flex-direction: row;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  align-content: center;
   background-color: var(--primary-color-2);
   max-width: 800px;
   min-height: 200px;
@@ -207,11 +208,17 @@ font-size: 2rem;
 
 /*ICON LIST STARTPAGE*/
 .icon-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  background-color: #d9be96;
+  position: relative;
+  width: 300px;
+ 
+  background-color: #e9dac4;
+  border-radius: 20px;
+  box-shadow: 0px 2px 4px -1px rgba(0,0,0,0.2), 0px 4px 5px 0px rgba(0,0,0,0.14),
   
+}
+.icon-list-item{
+  justify-content: center;
+  margin: 20px;
 }
 
 .icon-container ul{
@@ -223,10 +230,12 @@ font-size: 2rem;
 .icon-list-icon{
 display: flex;
 position: relative;
-justify-content: space-around;
+justify-content: center;
 align-items: center;
 flex-wrap: wrap;
 flex-direction: row;
+max-width: 300px;
+gap: 20px;
 }
 
 .icon-list-text {
@@ -238,12 +247,15 @@ flex-direction: row;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  max-width: 800px;
-  min-height: 100px;
-  margin: 40px auto 0 auto;
+  box-shadow: 0px 2px 4px -1px rgba(0,0,0,0.2), 0px 4px 5px 0px rgba(0,0,0,0.14), 0px 1px 10px 0px rgba(0,0,0,0.12);
+  border-radius: 10px;
   border: 1px solid red;
+  content: inherit;
 }
 
 .summary-p{
   font-size: 16px;
+}
+.summary-h3{
+  font-size: 22px;
 }
