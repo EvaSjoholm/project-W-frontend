@@ -12,7 +12,7 @@ export const App = () => {
       <NavBar />
       <Header />
       <Routes>
-        <Route path="/" element={<StartPage title="Wörkout Quiz" />} />
+        <Route path="/" element={<StartPage title="Join the fam!" />} />
         <Route path="/Quiz" element={<Quiz />} />
       </Routes>
     </BrowserRouter>
