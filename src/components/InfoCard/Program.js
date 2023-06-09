@@ -22,7 +22,6 @@ export const Program = () => {
           <Button
             color="Darkgreen"
             text="contact"
-            type="button"
             onClick={onClickToContact}
             aria-label="button to take quiz for program search" />
         </div>
