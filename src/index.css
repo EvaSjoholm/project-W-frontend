@@ -151,7 +151,7 @@ border-radius: 30px;
 
 .btn {
   display: inline-block;
-  background: #a7b7abfc;
+  background-color: var(--secondary-color-1);
   color: #fff;
   border: none;
   padding: 10px 10px;

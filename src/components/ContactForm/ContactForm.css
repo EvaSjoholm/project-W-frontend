@@ -5,7 +5,7 @@
 }
 
 .contactform {
-    width: 100%;
+    width: 70%;
     background-color: var(--primary-color);
     margin: 32px auto 64px auto;
 }
@@ -169,7 +169,7 @@
   @media (min-width: 641px) {
     .contactform {
         width: 70%;
-        max-width: 600px;
+        max-width: 400px;
         margin: 32px auto 64px auto;
     }
 
@@ -189,7 +189,7 @@
   @media (min-width: 1025px) {
     .contactform {
         width: 70%;
-        max-width: 600px;
+        max-width: 400px;
         margin: 32px auto 64px auto;
     }
 
