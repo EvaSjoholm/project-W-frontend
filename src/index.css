@@ -91,16 +91,24 @@ p {
   overflow-x: hidden;
 }
 
-.header-img{
-width: 50%;
-height: 50%;
-border-radius: 30px;
+.header-wrapper {
+  display: flex;
+  justify-content: center;
+  flex-direction: row-reverse;
+  align-items: center;
+  gap: 2em;
+  padding: 16px;
 }
+
+.img {
+  max-width: 50%;
+  border-radius: 16px;
+    }
 
 .header-text {
   display: flex;
   flex-direction: column;
-  align-items: flex-end;
+  /* align-items: flex-end; */
 }
 
 .main {
