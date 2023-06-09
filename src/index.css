@@ -91,6 +91,12 @@ p {
   overflow-x: hidden;
 }
 
+.header-img{
+width: 50%;
+height: 50%;
+border-radius: 16px;
+}
+
 .header-text {
   display: flex;
   flex-direction: column;
@@ -101,7 +107,6 @@ p {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: var(--primary-color-2);
   max-width: 800px;
   min-height: 200px;
   margin: auto;
@@ -113,16 +118,17 @@ p {
   margin: auto;
   padding: 20px;
   margin: var(--side-margins-mobile);
+  border-radius: 16px;
 }
 
 .content-container {
-  background-color: var(--secondary-color-1);
   display: flex;
   flex-direction: column;
   align-items: center;
   margin: 0 auto 30px auto;
   max-width: 800px;
   min-height: 200px;
+  border-radius: 16px;
 
   
 }
@@ -263,7 +269,6 @@ gap: 20px;
   justify-content: center;
   box-shadow: 0px 2px 4px -1px rgba(0,0,0,0.2), 0px 4px 5px 0px rgba(0,0,0,0.14), 0px 1px 10px 0px rgba(0,0,0,0.12);
   border-radius: 10px;
-  border: 1px solid red;
   content: inherit;
 }
 
