@@ -54,7 +54,7 @@ export const Quiz = () => {
 
   const submitQuiz = () => {
     if (isLastQuestion) {
-      navigate('/contact'); // Navigate to specific page
+      navigate('/contact');
     } else {
       setSubmitted(true);
     }
@@ -84,7 +84,6 @@ export const Quiz = () => {
               <Summary
                 answers={answers} />
             )}
-            {/* {submitted && ( */}
           </div>
         )
       })}
