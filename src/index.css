@@ -94,7 +94,7 @@ p {
 .header-img{
 width: 50%;
 height: 50%;
-border-radius: 16px;
+border-radius: 30px;
 }
 
 .header-text {
@@ -175,11 +175,12 @@ border-radius: 16px;
   flex-direction: row;
   justify-content: space-between;
   padding: 15px;
+  opacity: 0.5;
 }
 
 
 .nav {
-  background-color: var(--primary-color-1);
+  background-color: #51635a;
   color: var(--primary-color-2);
   display: flex;
   justify-content: space-between;
@@ -188,6 +189,7 @@ border-radius: 16px;
   padding: 0 1rem;
   margin: 10px;
 }
+
 
 .site-title {
 font-size: 2rem;
@@ -214,7 +216,7 @@ font-size: 2rem;
   background-color: #555;
 }
 .nav li:hover{
-  background-color: #777;
+  background-color: white;
 }
 
 .logo {
