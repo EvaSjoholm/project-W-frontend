@@ -8,6 +8,7 @@ import { Quiz } from 'components/Quiz/Quiz'
 import { Contact } from 'components/ContactForm/Contact'
 import { Footer } from 'components/Footer/Footer'
 import { Why } from 'components/Why/Why'
+import { Program } from './components/InfoCard/Program'
 
 export const App = () => {
   return (
@@ -15,11 +16,12 @@ export const App = () => {
     <BrowserRouter>
       <NavBar />
       <Header />
-      <Why />
       <Routes>
         <Route path="/" element={<StartPage title="Join the fam!" />} />
         <Route path="/Quiz" element={<Quiz />} />
         <Route path="/Contact" element={<Contact title="Get contacted" />} />
+        <Route path="Why" element={<Why />} />
+        <Route path="/program" element={<Program />} />
       </Routes>
       <Footer />
     </BrowserRouter>
