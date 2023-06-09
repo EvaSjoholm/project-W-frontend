@@ -2,6 +2,8 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import logo from 'assets/workoutLogo.png'
 
+import './Navbar.css'
+
 export const NavBar = () => {
   return (
     <nav className="nav">
