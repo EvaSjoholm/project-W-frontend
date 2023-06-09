@@ -151,7 +151,7 @@ border-radius: 30px;
 
 .btn {
   display: inline-block;
-  background: #000;
+  background: #a7b7abfc;
   color: #fff;
   border: none;
   padding: 10px 10px;
@@ -160,8 +160,7 @@ border-radius: 30px;
   cursor: pointer;
   text-decoration: none;
   font-size: 15px;
-  width: 70px;
-  height: 60px;
+  width: 200px;
   }
 
 
