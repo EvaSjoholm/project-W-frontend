@@ -1,5 +1,6 @@
 /* eslint-disable no-underscore-dangle */
 import React, { useState, useEffect } from 'react'
+import { useNavigate } from 'react-router-dom';
 import { Button } from 'components/Button';
 import { Question } from './Question';
 import { Summary } from './Summary';
@@ -11,6 +12,8 @@ export const Quiz = () => {
 
   const [isLastQuestion, setIsLastQuestion] = useState(false);
   const [submitted, setSubmitted] = useState(false)
+
+  const navigate = useNavigate();
 
   const nextQuestion = (questionsLength) => () => {
     console.log('next', currentQuestion)
@@ -50,7 +53,11 @@ export const Quiz = () => {
   }
 
   const submitQuiz = () => {
-    setSubmitted(true);
+    if (isLastQuestion) {
+      navigate('/contact'); // Navigate to specific page
+    } else {
+      setSubmitted(true);
+    }
   };
 
   return (
