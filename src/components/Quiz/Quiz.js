@@ -37,9 +37,9 @@ export const Quiz = ({ quiz, quizDone }) => {
         handleAnswerChange={(e) => { storeAnswer(e.target.value, currentQuestion._id) }} />
       {
         onLast ? (
-          <Button color="Blue" text="Submit" onClick={() => { quizDone(answers) }} />
+          <Button text="Submit" onClick={() => { quizDone(answers) }} />
         ) : (
-          <Button color="Blue" text="Next" onClick={nextQuestion} />
+          <Button text="Next" onClick={nextQuestion} />
         )
       }
     </div>

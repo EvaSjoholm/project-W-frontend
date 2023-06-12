@@ -53,7 +53,7 @@ export const Quizzes = () => {
             return (
               <div className="content-wrapper" key={quiz._id}>
                 <h3>{quiz.title}</h3>
-                <Button color="blue" text="Take quiz" onClick={() => setCurrentQuiz(quiz)} />
+                <Button text="Take quiz" onClick={() => setCurrentQuiz(quiz)} />
               </div>
             )
           })
@@ -66,7 +66,7 @@ export const Quizzes = () => {
         <Summary answers={answers} />
         {
           shouldContact()
-            ? (<Button color="blue" text="Sign up" onClick={() => { navigate('/contact') }} />)
+            ? (<Button text="Sign up" onClick={() => { navigate('/contact') }} />)
             : (<div>no contact</div>)
         }
       </div>

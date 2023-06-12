@@ -8,7 +8,7 @@ export const StartPage = ({ title }) => {
   const navigate = useNavigate();
 
   const onClickToQuiz = () => {
-    navigate('/Quiz');
+    navigate('/quizzes');
     setLoading(true)
   }
 
