@@ -6,8 +6,8 @@ export const Header = () => {
     <div className="header">
       <div className="header-container">
         <div className="header-wrapper">
-          <img src={WorkoutImg} alt="header-img" height="300px" width="300px" />
           <h1> The Wörkout Effect</h1>
+          <img src={WorkoutImg} alt="header-img" height="300px" width="300px" />
         </div>
         <div className="header-text">
           <h1>Less is more</h1>
