@@ -26,7 +26,7 @@ export const Program = () => {
             <img src={BlackImg} alt="Bootcamp-Image" />
           </div>
           <div className="class-text">
-            <p>Join our WÖRKOUT family, fill out our QUIZ to get a ahead of your journey!</p>
+            <p>We meet all levels, let us know what you are looking for!</p>
             <Button
               color="Army Green"
               text="QUIZ"
