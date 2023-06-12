@@ -13,7 +13,7 @@ export const Program = () => {
     navigate('/contact')
   }
   const onClickToQuiz = () => {
-    navigate('/Quiz')
+    navigate('/quizzes')
   }
   return (
     <div className="program-container">
