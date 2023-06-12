@@ -67,7 +67,7 @@ export const Quizzes = () => {
         {
           shouldContact()
             ? (<Button text="Sign up" onClick={() => { navigate('/contact') }} />)
-            : (<div>no contact</div>)
+            : (<Button text="Home" onClick={() => { navigate('/') }} />)
         }
       </div>
     ) : (
