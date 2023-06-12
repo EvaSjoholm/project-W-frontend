@@ -4,7 +4,7 @@ import { NavBar } from 'components/Navbar/NavBar'
 import { Header } from 'components/Header'
 import { StartPage } from 'components/StartPage'
 
-import { Quiz } from 'components/Quiz/Quiz'
+import { Quizzes } from 'components/Quiz/Quizzes'
 import { Contact } from 'components/ContactForm/Contact'
 import { Footer } from 'components/Footer/Footer'
 import { Program } from './components/InfoCard/Program'
@@ -17,7 +17,7 @@ export const App = () => {
       <Header />
       <Routes>
         <Route path="/" element={<StartPage title="Join the fam!" />} />
-        <Route path="/Quiz" element={<Quiz />} />
+        <Route path="/quizzes" element={<Quizzes />} />
         <Route path="/Contact" element={<Contact title="Get contacted" />} />
         <Route path="/program" element={<Program />} />
       </Routes>
