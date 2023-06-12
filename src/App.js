@@ -1,7 +1,6 @@
 import React from 'react'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import { NavBar } from 'components/Navbar/NavBar'
-import { Header } from 'components/Header'
 import { StartPage } from 'components/StartPage'
 
 import { Quizzes } from 'components/Quiz/Quizzes'
@@ -14,7 +13,6 @@ export const App = () => {
 
     <BrowserRouter>
       <NavBar />
-      <Header />
       <Routes>
         <Route path="/" element={<StartPage title="Join the fam!" />} />
         <Route path="/quizzes" element={<Quizzes />} />
