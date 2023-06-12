@@ -11,6 +11,7 @@
 
 .contactform {
     width: 40%;
+    max-width: 40%;
     background-color: var(--primary-color);
     margin: 32px auto 64px auto;
 }
