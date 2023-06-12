@@ -13,7 +13,7 @@ export const Contact = () => {
   return (
     <div className="contact">
       <form className="contactform">
-        <h3>Contact form</h3>
+        <h3>GET CONTACTED</h3>
         <label htmlFor="name"><span>Name</span>
           <br />
           <input type="text" id="name" name="name" className="inputfield" placeholder="First Lastname" />
@@ -24,7 +24,7 @@ export const Contact = () => {
           <input type="email" id="email" name="email" className="inputfield" placeholder="example@email.com" />
         </label>
 
-        <Button color="Green" text="home" onClick={onClickToStartPage} />
+        <Button color="Grey" text="home" onClick={onClickToStartPage} />
       </form>
     </div>
 
