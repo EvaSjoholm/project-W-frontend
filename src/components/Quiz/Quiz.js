@@ -13,8 +13,6 @@ export const Quiz = () => {
   const [isLastQuestion, setIsLastQuestion] = useState(false);
   const [submitted, setSubmitted] = useState(false)
 
-  // const navigate = useNavigate();
-
   const nextQuestion = (questionsLength) => () => {
     console.log('next', currentQuestion)
     if (currentQuestion < questionsLength - 1) {
@@ -53,12 +51,9 @@ export const Quiz = () => {
     console.log(answers)
   }
 
-  // const submitQuiz = () => {
-  //   if (isLastQuestion) {
-  //     navigate('/contact');
-  //   } else {
-  //     setSubmitted(true);
-  // };
+  const submitQuiz = () => {
+    setSubmitted(true);
+  };
 
   return (
     <div className="content-container">
@@ -77,8 +72,7 @@ export const Quiz = () => {
                 <Button
                   color="Pink"
                   text={isLastQuestion ? 'SUBMIT' : 'NEXT'}
-                  onClick={isLastQuestion ? setSubmitted(true)
-                    : nextQuestion(quiz.questions.length)} />
+                  onClick={isLastQuestion ? submitQuiz : nextQuestion(quiz.questions.length)} />
               </>
             ) : (
 
