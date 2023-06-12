@@ -89,7 +89,7 @@ p {
   align-items: center;
   gap: 2em;
   padding: 16px;
-  background-color: #AEC2B6;
+  background-color: #becfc5;
   border-radius: 40px;
   box-shadow: 0px 2px 4px -1px rgba(0,0,0,0.2), 0px 4px 5px 0px rgba(0,0,0,0.14), 0px 1px 10px 0px rgba(0,0,0,0.12);
 }
@@ -193,9 +193,12 @@ top: 10px;
 }
 
 @media only screen and (max-width: 476px) {
-  :root{
-    --side-margins-mobile: 5px;
-  }
+ .header-wrapper{
+  flex-direction: column;
+  background-color: none;
+  gap: 0;
+ }
+ 
   h1 {
     font-size: 1.5rem;
   }
@@ -206,14 +209,10 @@ top: 10px;
   .main {
     padding: 10px;
   }
-  .conten-wrapper{
+  .content-wrapper{
     margin: var(---side-margins-mobile)
   }
 
-  .header-wrapper{
-    gap: 1em;
-    display: flex;
-  }
   .img {
     max-width: 100%;
     border-radius: 8px;
