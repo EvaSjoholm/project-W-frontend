@@ -1,6 +1,6 @@
 /* eslint-disable no-underscore-dangle */
 import React, { useState, useEffect } from 'react'
-import { useNavigate } from 'react-router-dom';
+// import { useNavigate } from 'react-router-dom';
 import { Button } from 'components/Button';
 import { Question } from './Question';
 import { Summary } from './Summary';
@@ -13,7 +13,7 @@ export const Quiz = () => {
   const [isLastQuestion, setIsLastQuestion] = useState(false);
   const [submitted, setSubmitted] = useState(false)
 
-  const navigate = useNavigate();
+  // const navigate = useNavigate();
 
   const nextQuestion = (questionsLength) => () => {
     console.log('next', currentQuestion)
@@ -37,7 +37,8 @@ export const Quiz = () => {
   useEffect(() => {
     if (quizzes.length > 0) {
       const currentQuiz = quizzes[0];
-      setIsLastQuestion(currentQuestion === currentQuiz.questions.length - 1);
+      // setIsLastQuestion(currentQuestion === currentQuiz.questions.length - 1);
+      setIsLastQuestion(currentQuestion === currentQuiz.questions.length);
     }
   }, [currentQuestion, quizzes])
 
@@ -52,13 +53,12 @@ export const Quiz = () => {
     console.log(answers)
   }
 
-  const submitQuiz = () => {
-    if (isLastQuestion) {
-      navigate('/contact');
-    } else {
-      setSubmitted(true);
-    }
-  };
+  // const submitQuiz = () => {
+  //   if (isLastQuestion) {
+  //     navigate('/contact');
+  //   } else {
+  //     setSubmitted(true);
+  // };
 
   return (
     <div className="content-container">
@@ -77,7 +77,8 @@ export const Quiz = () => {
                 <Button
                   color="Pink"
                   text={isLastQuestion ? 'SUBMIT' : 'NEXT'}
-                  onClick={isLastQuestion ? submitQuiz : nextQuestion(quiz.questions.length)} />
+                  onClick={isLastQuestion ? setSubmitted(true)
+                    : nextQuestion(quiz.questions.length)} />
               </>
             ) : (
 

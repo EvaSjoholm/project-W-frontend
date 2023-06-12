@@ -12,8 +12,14 @@ export const Program = () => {
   const onClickToContact = () => {
     navigate('/contact')
   }
+  const onClickToQuiz = () => {
+    navigate('/Quiz')
+  }
   return (
-    <div className="class-container">
+    <div className="program-container">
+      <div className="program-title">
+        Take our quiz and we will find your program!
+      </div>
       <div className="class-section">
         <div className="class-card">
           <div className="class-img">
@@ -24,7 +30,7 @@ export const Program = () => {
             <Button
               color="Army Green"
               text="contact"
-              onClick={onClickToContact}
+              onClick={onClickToQuiz}
               aria-label="button to take quiz for program search" />
           </div>
         </div>
@@ -33,7 +39,7 @@ export const Program = () => {
             <img src={ShirtImg} alt="Bootcamp-Image" />
           </div>
           <div className="class-text">
-            <p>Let us build strong minds and body as a team!</p>
+            <p>Join the fam and get a WÖRKOUT t-shirt for free!</p>
             <Button
               color="Armygreen"
               text="contact"
