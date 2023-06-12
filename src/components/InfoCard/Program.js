@@ -17,9 +17,9 @@ export const Program = () => {
   }
   return (
     <div className="program-container">
-      <div className="program-title">
-        Take our quiz and we will find your program!
-      </div>
+      <h3 className="program-title">
+        QUICK QUIZ
+      </h3>
       <div className="class-section">
         <div className="class-card">
           <div className="class-img">
@@ -29,11 +29,12 @@ export const Program = () => {
             <p>Join our WÖRKOUT family, fill out our QUIZ to get a ahead of your journey!</p>
             <Button
               color="Army Green"
-              text="contact"
+              text="QUIZ"
               onClick={onClickToQuiz}
               aria-label="button to take quiz for program search" />
           </div>
         </div>
+        <hr className="first-line" />
         <div className="class-card">
           <div className="class-img">
             <img src={ShirtImg} alt="Bootcamp-Image" />
@@ -42,7 +43,7 @@ export const Program = () => {
             <p>Join the fam and get a WÖRKOUT t-shirt for free!</p>
             <Button
               color="Armygreen"
-              text="contact"
+              text="CONTACT"
               onClick={onClickToContact}
               aria-label="button to take quiz for program search" />
           </div>

@@ -1,9 +1,11 @@
 .program-container {
-    background-color: var(--primary-color);
+    background-color: var(--primary-color-2);
     width: 100%;
     height: 100%;
     padding: 20px 0;
 }
+
+
 
 .program-title {
     position: relative;
@@ -57,7 +59,11 @@
         margin: 0;
     }
 
-
+    .first-line {
+        width: 100%;
+        border: 1px solid gray;
+        opacity: 0.5;
+    }
 }
     
 @media (min-width: 1025px) {
@@ -74,6 +80,7 @@
         top: 100px;
         text-align: center;
     }
+
 
     .program-container h3 {
         text-align: center;
