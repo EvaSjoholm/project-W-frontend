@@ -15,12 +15,13 @@ code {
 
 /*----COLOR AND TYPO DESIGN---*/
 :root {
-  --primary-color-1: #F5F5F5;
-  --primary-color-2: #a7b7abfc;
-  --primary-color-3:  #AEC2B6;
-  --secondary-color-1: #BBD6B8;
-  --secondary-color-2: #BBD6B8;
-  --secondary-color-3: #dc7958;
+  --primary-color-1: #A3B2A4; /*heels green*/
+  --primary-color-2: #C3C6A8; /*balance green*/
+  --primary-color-3:  #EFDBB2; /*chaia tea*/
+  --secondary-color-1: #E0C6AD; /*larb gai*/
+  --secondary-color-2: #C1B2A2; /*balaned beige*/
+  --secondary-color-3: #E4D5D3; /*whirlwind pink*/
+  
   --neutral-light: #FFFFFF;
   --neutral-medium: #525252;
   --neutral-dark: #000000;
