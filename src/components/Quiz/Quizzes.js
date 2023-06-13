@@ -42,7 +42,7 @@ export const Quizzes = () => {
 
   const shouldContact = () => {
     const contactOption = answers[answers.length - 1].option
-    return contactOption === 'Yes' || contactOption === 'Contact me'
+    return contactOption === 'Yes' || contactOption === ''
   }
 
   if (!currentQuiz.title) {
