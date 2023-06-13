@@ -24,8 +24,10 @@ export const StartPage = ({ title }) => {
           </div>
         </div>
       </div>
-      <h1>{title}</h1>
-      <Button color="black" text="Take Quiz" onClick={onClickToQuiz} />
+      <div className="button-container">
+        <h1>{title}</h1>
+        <Button color="black" text="Take Quiz" onClick={onClickToQuiz} />
+      </div>
     </div>
   )
 }
