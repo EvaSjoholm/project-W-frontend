@@ -13,7 +13,7 @@ export const StartPage = ({ title }) => {
   return (
     <div className="main">
       <div className="header">
-        <div className="header-container">¢
+        <div className="header-container">
           <div className="header-wrapper">
             <h1> #WÖRKOUTFAMILY</h1>
             <img src={WorkoutImg} alt="header-img" height="300px" width="300px" />
