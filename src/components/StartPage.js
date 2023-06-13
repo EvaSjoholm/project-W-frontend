@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import WorkoutImg from 'assets/workout.jpg'
 import { Button } from './Button';
-import { Loading } from './Quiz/Loading';
+import { Loading } from './Quiz/Loading'
 
 export const StartPage = ({ title }) => {
   const [loading, setLoading] = useState(false)
