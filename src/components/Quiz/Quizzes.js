@@ -4,14 +4,12 @@ import { Button } from 'components/Button';
 import { useNavigate } from 'react-router-dom';
 import { Quiz } from './Quiz';
 import { Summary } from './Summary';
-import { Loading } from '../Loader/Loading'
 
 export const Quizzes = () => {
   const [quizzes, setQuizzes] = useState([])
   const [currentQuiz, setCurrentQuiz] = useState({})
   const [quizDone, setQuizDone] = useState(false)
   const [answers, setAnswers] = useState([])
-  const [loading, setLoading] = useState(false)
 
   useEffect(() => {
     console.log('Fetching quizzes')
@@ -19,7 +17,7 @@ export const Quizzes = () => {
       .then((res) => res.json())
       .then((data) => {
         setQuizzes(data)
-          .finally(() => setLoading(false));
+
         console.log(data);
       })
       .catch((error) => {
@@ -42,10 +40,6 @@ export const Quizzes = () => {
 
   const navigate = useNavigate();
 
-  if (loading) {
-    return <Loading />
-  }
-
   const shouldContact = () => {
     const contactOption = answers[answers.length - 1].option
     return contactOption === 'Yes' || contactOption === 'Contact me'
@@ -61,7 +55,6 @@ export const Quizzes = () => {
               <div className="content-wrapper" key={quiz._id}>
                 <h3>{quiz.title}</h3>
                 <Button text="Take quiz" onClick={() => setCurrentQuiz(quiz)} />
-                {loading}
               </div>
             )
           })
