@@ -62,7 +62,7 @@ export const Quizzes = () => {
     );
   } else {
     return quizDone ? (
-      <div>
+      <div className="summary-container">
         <Summary answers={answers} />
         {
           shouldContact()

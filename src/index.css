@@ -171,10 +171,11 @@ p {
 .summary-container{
 z-index: 1;
 display: flex;
+justify-content: space-around;
+flex-wrap: wrap;
 width: 80vw;
 border-radius: 20px;
 border: 1px solid blue;
-justify-content: center;
 padding: 10px;
 margin: 20px auto;
 position: relative;
