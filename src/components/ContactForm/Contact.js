@@ -7,7 +7,7 @@ export const Contact = () => {
   const navigate = useNavigate();
 
   const onClickToStartPage = () => {
-    navigate('/StartPage')
+    navigate('/')
   }
 
   return (
