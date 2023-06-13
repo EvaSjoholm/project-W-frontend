@@ -7,6 +7,7 @@ export const Quiz = ({ quiz, quizDone }) => {
   const [currentQuestionIdx, setCurrentQuestionIdx] = useState(0)
   const [onLast, setOnLast] = useState(false)
   const [answers, setAnswers] = useState({})
+
   const nextQuestion = () => {
     const nextIndex = currentQuestionIdx + 1
     if (quiz.questions[nextIndex]) {
