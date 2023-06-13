@@ -19,7 +19,7 @@ export const StartPage = ({ title }) => {
             <img src={WorkoutImg} alt="header-img" height="300px" width="300px" />
           </div>
           <div className="header-text">
-            <h1>Less is more</h1>
+            <h1>LESS IS MORE</h1>
             <p>Move like water my friend</p>
           </div>
         </div>
