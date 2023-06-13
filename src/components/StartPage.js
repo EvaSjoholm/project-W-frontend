@@ -1,26 +1,19 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import WorkoutImg from 'assets/workout.jpg'
 import { Button } from './Button';
-import { Loading } from './Quiz/Loading'
 
 export const StartPage = ({ title }) => {
-  const [loading, setLoading] = useState(false)
   const navigate = useNavigate();
 
   const onClickToQuiz = () => {
     navigate('/quizzes');
-    setLoading(true)
-  }
-
-  if (loading) {
-    return <Loading />
   }
 
   return (
     <div className="main">
       <div className="header">
-        <div className="header-container">
+        <div className="header-container">¢
           <div className="header-wrapper">
             <h1> #WÖRKOUTFAMILY</h1>
             <img src={WorkoutImg} alt="header-img" height="300px" width="300px" />
@@ -33,8 +26,6 @@ export const StartPage = ({ title }) => {
       </div>
       <h1>{title}</h1>
       <Button color="black" text="Take Quiz" onClick={onClickToQuiz} />
-      {loading}
     </div>
-
   )
 }
