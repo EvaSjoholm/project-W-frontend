@@ -110,15 +110,15 @@ p {
 }
 
 /*----START PAGE BUTTON BOX WITH IMAGE---*/
-.button-container {
+.box-div {
   background-image: url('./assets//backgrund-img.png');
   background-size: cover;
   background-position: 100%;
   padding: 20px;
   display: flex;
   flex-direction: column;
-  max-width: 300px;
-  height: 50vh;
+  max-width: 250px;
+  height: 45vh;
   width: 100%;
   justify-content: flex-end;
   align-items: flex-end;

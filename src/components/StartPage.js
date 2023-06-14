@@ -24,7 +24,7 @@ export const StartPage = ({ title }) => {
           </div>
         </div>
       </div>
-      <div className="button-container">
+      <div className="box-div">
         <h1>{title}</h1>
         <Button text="Take Quiz" onClick={onClickToQuiz} />
       </div>
