@@ -6,7 +6,7 @@ export const Footer = () => {
   return (
     <div className="Footer">
       <div className="iconfield">
-        <img src={InstaIcon} alt="instaIcon" height="40px" />
+        <img src={InstaIcon} alt="instaIcon" height="30px" />
       </div>
     </div>
   )
