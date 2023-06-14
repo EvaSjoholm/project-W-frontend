@@ -5,11 +5,14 @@ import { useNavigate } from 'react-router-dom';
 import { Quiz } from './Quiz';
 import { Summary } from './Summary';
 
+import { Loading } from '../Loader/Loading';
+
 export const Quizzes = () => {
   const [quizzes, setQuizzes] = useState([])
   const [currentQuiz, setCurrentQuiz] = useState({})
   const [quizDone, setQuizDone] = useState(false)
   const [answers, setAnswers] = useState([])
+  const [loading, setLoading] = useState(true)
 
   useEffect(() => {
     console.log('Fetching quizzes')
@@ -17,9 +20,9 @@ export const Quizzes = () => {
       .then((res) => res.json())
       .then((data) => {
         setQuizzes(data)
-
         console.log(data);
       })
+      .finally(() => setLoading(false))
       .catch((error) => {
         console.log(error);
       });
@@ -49,6 +52,7 @@ export const Quizzes = () => {
     console.log('No chosen quiz')
     return (
       <div className="content-container">
+        {loading && <Loading />}
         {
           quizzes.map((quiz) => {
             return (
