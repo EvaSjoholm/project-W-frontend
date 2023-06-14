@@ -12,6 +12,11 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap");
+
+.App {
+  font-family: "Poppins", sans-serif;
+}
 
 /*----COLOR AND TYPO DESIGN---*/
 :root {
@@ -69,15 +74,15 @@ p {
   background-size: cover;
   display: flex;
   flex-direction: column;
-  background-color: #e4d5d39f;
+  background-color: #ecceaf64; 
   width: 100vw;
-  /* max-width: 800px; */
   padding: 20px 0;
   margin: 0;
   position: relative;
   z-index: 5;
-  /* border: 2px solid rgb(225, 255, 192); */
 }
+
+/*#ecceaf64;*/
 
 .header-container {
   margin: auto;

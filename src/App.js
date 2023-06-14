@@ -8,6 +8,8 @@ import { Contact } from 'components/ContactForm/Contact'
 import { Footer } from 'components/Footer/Footer'
 import { Program } from './components/InfoCard/Program'
 
+import './index.css'
+
 export const App = () => {
   return (
 
