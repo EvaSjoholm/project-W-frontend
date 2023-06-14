@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import './ContactForm.css'
+import { LoadingAni } from 'components/Loader/LoadingAni'
 import { Button } from '../Button'
 
 export const Contact = () => {
@@ -11,7 +12,7 @@ export const Contact = () => {
 
   return (
     <div className="contact">
-      {submit ? <p>Thank you!</p> : (
+      {submit ? <LoadingAni /> : (
 
         <form className="contactform">
           <h3>GET CONTACTED</h3>
@@ -25,7 +26,7 @@ export const Contact = () => {
             <input type="email" id="email" name="email" className="inputfield" placeholder="example@email.com" />
           </label>
 
-          <Button color="Grey" text="Submit" onClick={handleSubmit} />
+          <Button color="LightGray" text="Submit" onClick={handleSubmit} />
         </form>
       )}
     </div>

@@ -30,7 +30,6 @@ export const Quiz = ({ quiz, quizDone }) => {
   console.log(JSON.stringify(currentQuestion))
   return (
     <div className="content-container">
-      {/* <h3>{quiz.title}</h3> */}
       <Question
         id={currentQuestion._id}
         title={currentQuestion.questionText}
