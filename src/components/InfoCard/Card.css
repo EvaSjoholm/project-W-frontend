@@ -20,9 +20,10 @@
     margin: auto;
 }
 
-.program-title{
+.card-title{
     border: 1px solid green;
     display: flex;
+    flex-direction: column;
     position: relative;
     text-align: center;
     margin: auto;
@@ -39,7 +40,7 @@
 }
 
 .class-img {
-    max-width: 100%
+    max-width: 80%
       }
 
 .class-img img {
@@ -48,10 +49,6 @@
     object-fit: cover;
     border-radius: 16px;
   }
-
-.class-card .textbutton {
-    max-width: 600px;
-}
 
 
 @media (min-width: 641px) and (max-width: 1024px) {

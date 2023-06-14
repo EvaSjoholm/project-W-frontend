@@ -32,7 +32,7 @@ code {
   --neutral-light: #FFFFFF;
   --neutral-medium: #525252;
   --neutral-dark: #000000;
-  --font-family: 'Inter', sans-serif;
+  --font-family: "Poppins", sans-serif;
   --font-size: 16px;
 
 
@@ -58,9 +58,11 @@ h2 {
 }
 
 h3 {
+  font-size: 1.8rem;
   font-family: "Poppins", sans-serif;
   margin: 0;
   letter-spacing: 0.1em;
+  color: var(--secondary-color-1);
 }
 
 p {
@@ -88,8 +90,6 @@ p {
   z-index: 5;
 }
 
-/*#ecceaf64;*/
-
 .header-container {
   margin: auto;
   max-width: calc(100% - 32px);
@@ -106,7 +106,6 @@ p {
   align-items: center;
   gap: 2em;
   padding: 20px;
-  /* background-color: #becfc5; */
   border-radius: 40px;
 }
 
@@ -230,7 +229,7 @@ top: 10px;
 
 /*---MEDIA QUERY with MOBILE FIRST---*/
 
-@media only screen and (min-width: 366px) {
+@media (min-width: 366px) {
  .header-wrapper{
   flex-direction: column;
   background-color: none;
@@ -249,6 +248,7 @@ top: 10px;
   p {
     font-size: calc(var(--font-size) * 0.75); /* Adjust the font size to 75% of the base size */
   }
+
   
   .content-wrapper{
     margin: var(---side-margins-mobile)

@@ -17,9 +17,10 @@ export const Program = () => {
   }
   return (
     <div className="program-container">
-      <h3 className="program-title">
+      <h3 className="card-title">
         QUICK QUIZ
       </h3>
+      <hr className="first-line" />
       <div className="class-section">
         <div className="class-card">
           <div className="class-img">
@@ -34,7 +35,6 @@ export const Program = () => {
               aria-label="button to take quiz for program search" />
           </div>
         </div>
-        <hr className="first-line" />
         <div className="class-card">
           <div className="class-img">
             <img src={ShirtImg} alt="Bootcamp-Image" />
