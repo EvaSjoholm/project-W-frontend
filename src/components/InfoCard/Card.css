@@ -59,7 +59,7 @@
     }
 
     .class-img {
-        max-width: 80%
+        max-width: 100%
           }
     
     .class-img img {
@@ -87,6 +87,7 @@
 
     .class-text p {
         text-align: left;
+        font-size: 1.2rem;
     }
       
     .class-img {
