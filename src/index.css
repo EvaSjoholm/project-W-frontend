@@ -12,7 +12,9 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap");
+
 
 .App {
   font-family: "Poppins", sans-serif;
@@ -41,6 +43,7 @@ code {
 }
 
 h1 {
+  font-family: "Poppins", sans-serif;
   font-size: 2rem;
   font-weight: 500;
   line-height: 1.6;
@@ -49,16 +52,19 @@ h1 {
 }
 
 h2 {
+  font-family: "Poppins", sans-serif;
   margin: 0;
   letter-spacing: 0em;
 }
 
 h3 {
+  font-family: "Poppins", sans-serif;
   margin: 0;
   letter-spacing: 0.1em;
 }
 
 p {
+  font-family: "Poppins", sans-serif;
   margin: 0;
   font-size: var(--font-size);
   letter-spacing: 0em;
