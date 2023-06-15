@@ -58,7 +58,7 @@ h2 {
 }
 
 h3 {
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   font-family: "Poppins", sans-serif;
   margin: 0;
   letter-spacing: 0.1em;
@@ -150,7 +150,6 @@ p {
 
 /*---FOR THE QUIZ---*/
 .content-wrapper {
-
   margin: auto;
   padding: 20px;
   margin: var(--side-margins-mobile);
@@ -255,11 +254,6 @@ top: 10px;
 
   p {
     font-size: calc(var(--font-size) * 0.75); /* Adjust the font size to 75% of the base size */
-  }
-
-  
-  .content-wrapper{
-    margin: var(---side-margins-mobile)
   }
 
   .img {
