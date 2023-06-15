@@ -118,20 +118,16 @@ p {
   margin: 10px;
 }
 
-/*----START PAGE BUTTON BOX WITH IMAGE---*/
+/*----OUR MISSION DIV ON STARTPAGE---*/
 .box-div {
-  background-image: url('./assets//backgrund-img.png');
-  background-size: cover;
-  background-position: 100%;
-  padding: 20px;
+  padding: 10px;
   display: flex;
-  flex-direction: column;
-  max-width: 250px;
+  max-width: 800px;
   height: 45vh;
   width: 100%;
-  justify-content: flex-end;
-  align-items: flex-end;
-  margin: 20px;
+  align-items: center;
+  margin: 10px;
+  gap: 20px;
 }
 
 .img {

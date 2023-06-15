@@ -58,7 +58,7 @@ export const Quizzes = () => {
             return (
               <div className="content-wrapper" key={quiz._id}>
                 <h3>{quiz.title}</h3>
-                <h6>Take a quiz to see which kind of workout person you are</h6>
+                <h6>Let us get to know you, take our quick quiz by clicking the button below </h6>
                 <Button text="Take quiz" onClick={() => setCurrentQuiz(quiz)} />
               </div>
             )
