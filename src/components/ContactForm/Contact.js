@@ -15,7 +15,7 @@ export const Contact = () => {
       {submit ? <LoadingAni /> : (
 
         <form className="contactform">
-          <h3>GET CONTACTED</h3>
+          <h3 className>FOR CONTACT</h3>
           <label htmlFor="name"><span>Name</span>
             <br />
             <input type="text" id="name" name="name" className="inputfield" placeholder="First Lastname" />
