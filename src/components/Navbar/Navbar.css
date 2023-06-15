@@ -16,11 +16,14 @@
     background-color: #e0e0e0;
     color: black;
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     align-items: stretch;
     gap: 2rem;
     padding: 1rem;
     margin: auto;
+    /*width: 100%; */
+    /*margin: -10px; */
   }
   
   
