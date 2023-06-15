@@ -109,6 +109,10 @@ p {
   border-radius: 40px;
 }
 
+.header-text {
+  margin: 10px;
+}
+
 /*----START PAGE BUTTON BOX WITH IMAGE---*/
 .box-div {
   background-image: url('./assets//backgrund-img.png');
@@ -239,6 +243,10 @@ top: 10px;
  .content-container{
   width: 70%;
   flex-direction:column;
+ }
+
+ .header-text {
+  flex-direction: column;
  }
  
   h1 {
