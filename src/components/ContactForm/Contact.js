@@ -25,9 +25,9 @@ export const Contact = () => {
             <br />
             <input type="email" id="email" name="email" className="inputfield" placeholder="example@email.com" />
           </label>
-
           <Button color="LightGray" text="Submit" onClick={handleSubmit} />
         </form>
+
       )}
     </div>
 

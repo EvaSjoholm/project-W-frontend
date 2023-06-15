@@ -116,7 +116,7 @@ p {
 
 /*----OUR MISSION DIV ON STARTPAGE---*/
 .box-div {
-  padding: 10px;
+  padding: 20px;
   display: flex;
   max-width: 800px;
   height: 45vh;
@@ -211,7 +211,7 @@ flex-wrap: wrap;
 width: 80vw;
 border-radius: 20px;
 padding: 10px;
-margin: 20px auto;
+margin: 30px auto;
 position: relative;
 top: 10px;
 }
@@ -264,6 +264,7 @@ top: 10px;
  .content-container{
   width: 70%;
   flex-direction:column;
+  height: 50vh;
  }
 
  .header-text {
