@@ -88,11 +88,7 @@ p {
   flex-direction: column;
   background-color: #ecceaf64; 
   width: 100vw;
-      /* padding: 20px 0; */
-    /* margin: 0; */
-    /* position: relative; */
-    /* z-index: 5; */
-    padding: 30px;
+  padding: 30px;
 }
 
 .header-container {
@@ -153,7 +149,6 @@ p {
 .content-wrapper {
   margin: auto;
   padding: 20px;
-  /* margin: var(--side-margins-mobile); */
   text-align: center;
   border: double;
   color: #535e53;
@@ -192,7 +187,6 @@ p {
 .btn {
   display: inline-block;
   background-color: #e4d5d39f;
-  /* background-color: rgba(124, 211, 87, 0.486); */
   color: black;
   border: none;
   padding: 10px 10px;
@@ -201,7 +195,11 @@ p {
   cursor: pointer;
   text-decoration: none;
   font-size: 15px;
-  width: 120px;
+  width: 110px;
+  }
+
+  .btn- :hover{
+    background-color: #e99b679f;
   }
 
 /*--SUMMARY DESIGN FOR QUIZ--*/
