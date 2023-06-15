@@ -7,6 +7,7 @@ export const Footer = () => {
     <div className="Footer">
       <div className="iconfield">
         <img src={InstaIcon} alt="instaIcon" height="30px" />
+        <p>© Eva Sjöholm</p>
       </div>
     </div>
   )
