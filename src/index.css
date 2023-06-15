@@ -278,6 +278,15 @@ top: 10px;
   p {
     font-size: calc(var(--font-size) * 0.75); /* Adjust the font size to 75% of the base size */
   }
+  h2 {
+    font-size: 1.3rem;
+  }
+
+  .box-div{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
 
   .img {
     max-width: 100%;
