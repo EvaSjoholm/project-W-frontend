@@ -18,6 +18,7 @@
     gap: 2em;
     padding: 16px;
     margin: auto;
+    align-items: center;
 }
 
 .card-title{
@@ -72,8 +73,9 @@
     
 @media (min-width: 1025px) {
     .class-card {
-        flex-direction: column;
+        flex-direction: column; /* för att denna ska kunna funka måste du ha en display:flex också */
         max-width: 375px;
+        padding: 50px;
     }
 
     .class-text {
@@ -103,5 +105,9 @@
         object-fit: cover;
         border-radius: 16px;
     }
-    
+    .class-section {
+        text-align-last: center;
+        display: flex;
+        flex-direction: row;
+    }
 }
