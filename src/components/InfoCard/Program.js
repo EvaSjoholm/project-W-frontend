@@ -1,3 +1,5 @@
+/* eslint-disable max-len */
+/* eslint-disable react/no-unescaped-entities */
 /* eslint-disable jsx-a11y/img-redundant-alt */
 import React from 'react'
 import BlackImg from 'assets/blackandwhite.webp'
@@ -18,7 +20,7 @@ export const Program = () => {
   return (
     <div className="program-container">
       <h3 className="card-title">
-        QUICK QUIZ
+        be a beautiful cupcake in a world full of muffins
       </h3>
       <hr className="first-line" />
       <div className="class-section">
@@ -27,7 +29,7 @@ export const Program = () => {
             <img src={BlackImg} alt="Bootcamp-Image" />
           </div>
           <div className="class-text">
-            <p>We meet all levels, let us know what you are looking for!</p>
+            <p>Striving to educate and help people find their fitness path through mind, body and soul</p>
             <Button
               color="Army Green"
               text="QUIZ"
@@ -40,7 +42,7 @@ export const Program = () => {
             <img src={ShirtImg} alt="Bootcamp-Image" />
           </div>
           <div className="class-text">
-            <p>Join the fam and get a WÖRKOUT t-shirt for free!</p>
+            <p>Liking our merch? We got plenty! Hit the contact-button and we will send you an email!</p>
             <Button
               color="Armygreen"
               text="CONTACT"
