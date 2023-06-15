@@ -1,3 +1,4 @@
+/* eslint-disable max-len */
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import WorkoutImg from 'assets/workout.jpg'
@@ -29,6 +30,9 @@ export const StartPage = ({ title }) => {
       </div>
       <div className="box-div">
         <h1>{title}</h1>
+
+        <h3>Our Mission:</h3>
+        <h2>To educate as many people as possible on fitness and nutrition and build strong minds and habits</h2>
       </div>
       <Button text="Take Quiz" onClick={onClickToQuiz} />
     </div>
