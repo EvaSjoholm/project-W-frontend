@@ -6,6 +6,7 @@ import { StartPage } from 'components/StartPage'
 import { Quizzes } from 'components/Quiz/Quizzes'
 import { Contact } from 'components/ContactForm/Contact'
 import { Footer } from 'components/Footer/Footer'
+import { NotFound } from 'components/Loader/NotFound'
 import { Program } from './components/InfoCard/Program'
 
 import './index.css'
@@ -20,6 +21,7 @@ export const App = () => {
         <Route path="/quizzes" element={<Quizzes />} />
         <Route path="/Contact" element={<Contact title="Get contacted" />} />
         <Route path="/program" element={<Program />} />
+        <Route path="/404" element={<NotFound />} />
       </Routes>
       <Footer />
     </BrowserRouter>
