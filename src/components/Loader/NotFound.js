@@ -1,5 +1,6 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
+import { Button } from '../Button'
 
 export const NotFound = () => {
   const navigate = useNavigate();
@@ -8,9 +9,9 @@ export const NotFound = () => {
   }
 
   return (
-    <div className="box-div">
-      <p>Ooh noo.... Page not found </p>
-      <button type="button" onClick={returnToHomePage}>Return here</button>
+    <div className="not-found">
+      <h2>Page not found </h2>
+      <Button text="Home" onClick={returnToHomePage} />
     </div>
   );
 }
