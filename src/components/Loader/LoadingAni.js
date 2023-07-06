@@ -14,8 +14,8 @@ export const LoadingAni = () => {
         loop
         src="https://assets4.lottiefiles.com/packages/lf20_wdetpydn.json"
         style={{ height: '100px', width: '100px' }} />
-
       <Button text="HOME" onClick={() => { navigate('/') }} />
+      <hr />
     </div>
   )
 }
