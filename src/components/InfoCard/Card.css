@@ -73,7 +73,7 @@
     
 @media (min-width: 1025px) {
     .class-card {
-        flex-direction: column; /* för att denna ska kunna funka måste du ha en display:flex också */
+        flex-direction: column;
         max-width: 375px;
         padding: 50px;
     }

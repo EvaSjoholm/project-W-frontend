@@ -35,7 +35,6 @@ export const StartPage = ({ title }) => {
         <h2>To educate as many people as possible on fitness and nutrition and build strong minds and habits</h2>
         <Button text="quiz" onClick={onClickToQuiz} />
       </div>
-      {/* <Button text="quiz" onClick={onClickToQuiz} /> */}
     </div>
   )
 }

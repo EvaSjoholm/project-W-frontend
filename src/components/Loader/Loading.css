@@ -21,7 +21,6 @@
   .loading-box{
     margin: auto;
     padding: 20px;
-    /* margin: var(--side-margins-mobile); */
     text-align: center;
     color: #535e53;
   }
