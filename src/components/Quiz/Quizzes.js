@@ -15,12 +15,10 @@ export const Quizzes = () => {
   const [loading, setLoading] = useState(true)
 
   useEffect(() => {
-    console.log('Fetching quizzes')
     fetch('https://finale-project-backend.onrender.com/quizzes')
       .then((res) => res.json())
       .then((data) => {
         setQuizzes(data)
-        console.log(data);
       })
       .finally(() => setLoading(false))
       .catch((error) => {
@@ -29,7 +27,6 @@ export const Quizzes = () => {
   }, []);
 
   const handleQuizDone = (incomingAnswers) => {
-    console.log('Quiz done!')
     setQuizDone(true)
 
     setAnswers(currentQuiz.questions.map((question) => {
@@ -38,7 +35,6 @@ export const Quizzes = () => {
         option: incomingAnswers[question._id]
       }
     }))
-    console.log(JSON.stringify(answers))
   }
 
   const navigate = useNavigate();
@@ -49,7 +45,6 @@ export const Quizzes = () => {
   }
 
   if (!currentQuiz.title) {
-    console.log('No chosen quiz')
     return (
       <div className="content-container">
         {loading && <Loading />}

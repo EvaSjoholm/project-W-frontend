@@ -22,12 +22,10 @@ export const Quiz = ({ quiz, quizDone }) => {
   const storeAnswer = (answer, id) => {
     answers[id] = answer
     setAnswers(answers)
-    console.log(JSON.stringify(answers))
   }
 
   const currentQuestion = quiz.questions[currentQuestionIdx]
 
-  console.log(JSON.stringify(currentQuestion))
   return (
     <div className="content-container">
       <Question

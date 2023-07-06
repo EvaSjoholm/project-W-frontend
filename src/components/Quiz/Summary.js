@@ -1,8 +1,6 @@
 import React from 'react';
 
 export const Summary = ({ answers }) => {
-  console.log(answers)
-
   return (
     <div className="summary-container">
       <div className="summary-wrapper">
